@@ -7,7 +7,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class TelegramSpringBotAppApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(TelegramSpringBotAppApplication.class, args);
+        try {
+            SpringApplication.run(TelegramSpringBotAppApplication.class, args);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 }
